@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build -prod",
-    "gh-pages": "ng build -prod && git add dist && git commit && git subtree push --prefix dist origin master",
+    "gh-pages": "ng build -prod && git add dist && git commit -m 'dist subtree commit' && git subtree push --prefix dist origin master",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
