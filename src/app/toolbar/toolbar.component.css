@@ -1,0 +1,9 @@
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+span {
+  color: #ff6600;
+}
+md-toolbar {
+  background-color: white;
+}

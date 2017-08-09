@@ -1,11 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-toolbar [title]=title></app-toolbar>
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <app-header></app-header>
-  <p>In Construction...</p>
-  <app-description></app-description>
+
+<app-main-container>
+  <app-header [title]=title></app-header>
   <app-social></app-social>
-</div>
+  <app-description [description]="description"></app-description>
+</app-main-container>
