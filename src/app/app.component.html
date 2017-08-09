@@ -1,10 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <p>In Construction...</p>
-  <p>Go to <a href="https://github.com/tfgraph">github.com/tfgraph</a> for more information.</p>
-  <p><a href="https://facebook.com/tfgraph">facebook.com/tfgraph</a></p>
-  <p><a href="https://twitter.com/tfgraph_">twitter.com/tfgraph_</a></p>
-</div>
+<app-toolbar [title]=title></app-toolbar>
+
+<app-main-container>
+  <app-header [title]=title></app-header>
+  <app-social></app-social>
+  <app-description [description]="description"></app-description>
+</app-main-container>
