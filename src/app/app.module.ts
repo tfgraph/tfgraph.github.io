@@ -11,7 +11,9 @@ import {DescriptionComponent} from './description/description.component';
 import {SocialComponent} from './social/social.component';
 import {SocialLinkComponent} from './social/social-link/social-link.component';
 import {HeaderComponent} from './header/header.component';
-import { MainContainerComponent } from './main-container/main-container.component';
+import {MainContainerComponent} from './main-container/main-container.component';
+import {RouterModule} from "@angular/router";
+import {Angulartics2GoogleAnalytics, Angulartics2Module} from "angulartics2";
 
 @NgModule({
   declarations: [
@@ -25,11 +27,13 @@ import { MainContainerComponent } from './main-container/main-container.componen
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot([]),
     MdToolbarModule,
     MdIconModule,
     MdCardModule,
     MdGridListModule,
     BrowserAnimationsModule,
+    Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
   ],
   providers: [],
   bootstrap: [AppComponent]
