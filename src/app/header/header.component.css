@@ -1,8 +1,15 @@
 h1 {
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 100px;
+  font-size: 120px;
   color: white;
   text-align: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  h1 {
+    font-size: 60px;
+  }
 }
 
 h2 {

@@ -1,19 +1,16 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Link} from './../../shared/link';
 
 @Component({
   selector: 'app-social-link',
   templateUrl: './social-link.component.html',
   styleUrls: ['./social-link.component.css']
 })
-export class SocialLinkComponent implements OnInit {
+export class SocialLinkComponent {
 
 
-  @Input() icon: String;
-  @Input() alt: String = "";
-  @Input() url: String;
+  @Input() link: Link;
+
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }
