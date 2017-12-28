@@ -14,6 +14,7 @@ import {HeaderComponent} from './header/header.component';
 import {MainContainerComponent} from './main-container/main-container.component';
 import {RouterModule} from "@angular/router";
 import {Angulartics2GoogleAnalytics, Angulartics2Module} from "angulartics2";
+import {AngularFontAwesomeModule} from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import {Angulartics2GoogleAnalytics, Angulartics2Module} from "angulartics2";
     MdGridListModule,
     BrowserAnimationsModule,
     Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
+    AngularFontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
